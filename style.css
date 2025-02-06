@@ -1,4 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@font-face {
+  font-family: Kumbh-sans-semi-bold;
+    src: url(Fonts/KumbhSans-SemiBold.woff2);
+}
+
+@font-face{
+  font-family:Kumbh-sans-Regular ;
+  src: url(Fonts/KumbhSans-Regular.woff2);
+}
+
+@font-face {
+  font-family:Kumbh-sans-medium ;
+  src:url(Fonts/KumbhSans-Medium.woff2);
+}
+
+@font-face {
+  font-family: kumbh-sans-Regular;
+  src: url(Fonts/KumbhSans-Regular.woff2);
+}
+
 
 * {
   padding: 0px;
@@ -9,9 +28,9 @@
 html,
 body {
   height: 100%;
-  font-family: "Lato", serif;
+  /* font-family: "Lato", serif; */
   background: #141414;
-  /* font-family: "Kumbh Sans", serif; */
+  
 }
 
 body {
@@ -42,7 +61,8 @@ header {
 .header-content h1 {
   color: white;
   font-size: 21px;
-  font-weight: 600;
+  font-family: Kumbh-sans-semi-bold;
+  /* font-weight: 600; */
 }
 
 nav a {
@@ -55,18 +75,22 @@ nav a {
 }
 
 #home {
-  font-weight: 500;
+  font-family:Kumbh-sans-medium ;
   color: white;
   border: 1px solid #3b3b3b;
   border-radius: 8px;
   background: #181818;
 }
 
+#blog1,#blog2{
+  font-family: kumbh-sans-Regular;
+}
+
 #hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("https://images.unsplash.com/photo-1665211097503-ca91faa3b5ac?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("hero-image.webp");
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -99,6 +123,8 @@ nav a {
   text-align: center;
   color: white;
   font-size: 30px;
+  font-family: Kumbh-sans-semi-bold;
+
 }
 
 .hero-content p {
@@ -135,12 +161,14 @@ nav a {
 }
 
 .right-box h2 {
+  font-family: Kumbh-sans-semi-bold;
   font-size: 30px;
   margin-bottom: 14px;
   margin-top: 20px;
 }
 
 .right-box p {
+  font-family: kumbh-sans-Regular;
   color: #b3b3b3;
 }
 
@@ -187,6 +215,8 @@ footer {
   border-top: 1px solid #2e2e2e;
   height: 75px;
   font-size: 14px;
-  font-weight: 400;
+  font-family: kumbh-sans-Regular;
+
+  /* font-weight: 400; */
   color: #7e7e81;
 }
